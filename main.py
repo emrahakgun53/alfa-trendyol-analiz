@@ -8,9 +8,9 @@ app = FastAPI()
 
 import os
 
-API_KEY = os.getenv("API_KEY")
-API_SECRET = os.getenv("API_SECRET")
-SUPPLIER_ID = os.getenv("SUPPLIER_ID")
+API_KEY = os.getenv("YjkFvX84p5Zsg4TraC0L")
+API_SECRET = os.getenv("ECGXZ5SlQ56sSNoDuJo8")
+SUPPLIER_ID = os.getenv("541541")
 
 def trendyol_urunleri():
     auth = base64.b64encode(f"{API_KEY}:{API_SECRET}".encode()).decode()
