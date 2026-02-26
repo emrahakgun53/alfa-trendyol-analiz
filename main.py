@@ -6,9 +6,11 @@ import pandas as pd
 
 app = FastAPI()
 
-API_KEY = ""
-API_SECRET = ""
-SUPPLIER_ID = ""
+import os
+
+API_KEY = os.getenv("API_KEY")
+API_SECRET = os.getenv("API_SECRET")
+SUPPLIER_ID = os.getenv("SUPPLIER_ID")
 
 def trendyol_urunleri():
     auth = base64.b64encode(f"{API_KEY}:{API_SECRET}".encode()).decode()
